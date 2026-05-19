@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bdgakrc0qeequ" path="res://scenes/userinterface/game_score.tscn" id="4_k0juu"]
 [ext_resource type="Texture2D" uid="uid://5of2eq8sps2c" path="res://assets/health.png" id="5_71j4m"]
 [ext_resource type="Script" uid="uid://qgje7c48q2wg" path="res://scenes/health.gd" id="6_qfnet"]
+[ext_resource type="PackedScene" uid="uid://cvqkw7mx72pfw" path="res://scenes/utils/powerup_spawner.tscn" id="7_i7141"]
 
 [node name="World" type="Node2D" unique_id=1815915779]
 
@@ -20,7 +21,10 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(760, 440)
 
 [node name="Health" type="Sprite2D" parent="." unique_id=1191075052]
+modulate = Color(1, 1, 1, 0)
 z_index = 100
 scale = Vector2(0.4, 0.4)
 texture = ExtResource("5_71j4m")
 script = ExtResource("6_qfnet")
+
+[node name="PowerupSpawner" parent="." unique_id=1025766136 instance=ExtResource("7_i7141")]

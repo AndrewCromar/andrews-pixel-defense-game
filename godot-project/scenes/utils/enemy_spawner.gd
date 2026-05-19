@@ -2,7 +2,8 @@ extends Node2D
 
 @export var enemy_scene : PackedScene
 
-const SPWAN_RADIUS : float = 300
+const SPAWN_OUTER_RADIUS : float = 600
+const SPAWN_INNER_RADIUS : float = 300
 
 var counter : float = 0
 var time : float = 0
@@ -16,7 +17,8 @@ func _process(delta: float) -> void:
 
 func _spawn_enemy() -> void:
 	var angle = randf() * TAU
-	var point = Vector2(cos(angle), sin(angle)) * SPWAN_RADIUS
+	var random_distance = lerp(SPAWN_INNER_RADIUS, SPAWN_OUTER_RADIUS, sqrt(randf()))
+	var point = Vector2.from_angle(angle) * random_distance
 	
 	var enemy = enemy_scene.instantiate()
 	enemy.position = point

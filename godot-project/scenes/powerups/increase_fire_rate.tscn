@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cqjlautq42pim"]
+
+[ext_resource type="Script" uid="uid://cb5b1digcm5tf" path="res://scenes/powerups/increase_fire_rate.gd" id="1_0ikgc"]
+[ext_resource type="Texture2D" uid="uid://bi7p0x4jldemq" path="res://assets/player.png" id="2_3yj65"]
+[ext_resource type="AudioStream" uid="uid://b65uej5nhhdgt" path="res://sounds/pickupCoin.wav" id="3_3yj65"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hk301"]
+
+[node name="IncreaseFireRate" type="Area2D" unique_id=709652693]
+script = ExtResource("1_0ikgc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=177531221]
+shape = SubResource("RectangleShape2D_hk301")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1150547824]
+z_index = -1
+texture = ExtResource("2_3yj65")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=218807659]
+stream = ExtResource("3_3yj65")

@@ -32,6 +32,12 @@ window/stretch/aspect="keep_width"
 mouse_cursor/custom_image="uid://dn6d4ybwemrig"
 mouse_cursor/custom_image_hotspot=Vector2(12.5, 12.5)
 
+[file_customization]
+
+folder_colors={
+"res://scenes/": "pink"
+}
+
 [input]
 
 up={

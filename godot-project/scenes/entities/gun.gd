@@ -4,8 +4,6 @@ extends Node2D
 @export var shoot_sounds : Array[AudioStream] = []
 @onready var audio_player: AudioStreamPlayer = $AudioStreamPlayer
 
-var FIRE_RATE : float = 0.5
-
 var counter : float = 0.0
 
 func _process(delta) -> void:
@@ -13,7 +11,7 @@ func _process(delta) -> void:
 	
 	counter -= delta
 	if counter <= 0:
-		counter = FIRE_RATE
+		counter = Global.fire_rate
 		_shoot()
 
 func _shoot() -> void:
