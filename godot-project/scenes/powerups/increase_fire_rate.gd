@@ -29,6 +29,8 @@ func _on_area_entered(area: Area2D) -> void:
 		_die()
 
 func _die() -> void:
+	_spawn_particles()
+	
 	audio_player.play()
 	
 	audio_player.get_parent().remove_child(audio_player)
@@ -39,3 +41,12 @@ func _die() -> void:
 		camera.shake()
 	
 	queue_free()
+
+func _spawn_particles() -> void:
+	var p = %Particles.duplicate()
+	get_parent().add_child(p)
+	p.global_position = global_position
+	p.emitting = true
+
+	await get_tree().create_timer(1.0).timeout
+	p.queue_free()
