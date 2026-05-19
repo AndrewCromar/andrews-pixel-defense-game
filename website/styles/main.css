@@ -1,0 +1,18 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.bluesky {
+    background-color: #242424;
+
+    width: fit-content;
+
+    border: solid #639bff 2px;
+    border-radius: 10px;
+}
