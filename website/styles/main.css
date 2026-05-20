@@ -13,6 +13,8 @@
 
     width: fit-content;
 
+    text-align: left;
+
     border: solid #639bff 2px;
     border-radius: 10px;
 }
