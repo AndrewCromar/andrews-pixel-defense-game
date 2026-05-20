@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://cvqkw7mx72pfw"]
 
 [ext_resource type="Script" uid="uid://btaimfnwv37t5" path="res://scenes/utils/powerup_spawner.gd" id="1_6omgo"]
+[ext_resource type="PackedScene" uid="uid://cqjlautq42pim" path="res://scenes/powerups/increase_fire_rate.tscn" id="2_hmqh5"]
 [ext_resource type="PackedScene" uid="uid://bse7ewmeprb2n" path="res://scenes/powerups/bullet_spread.tscn" id="3_rnpil"]
 
 [node name="PowerupSpawner" type="Node2D" unique_id=1025766136]
 script = ExtResource("1_6omgo")
-powerups = Array[PackedScene]([ExtResource("3_rnpil")])
+powerups = Array[PackedScene]([ExtResource("2_hmqh5"), ExtResource("3_rnpil")])
