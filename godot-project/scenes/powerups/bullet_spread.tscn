@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bse7ewmeprb2n"]
+
+[ext_resource type="Script" uid="uid://b2m42kix663ss" path="res://scenes/powerups/bullet_spread.gd" id="1_o2yoy"]
+[ext_resource type="Texture2D" uid="uid://bmfqgaxrhbn0j" path="res://assets/bullet_spread.png" id="2_o2yoy"]
+[ext_resource type="AudioStream" uid="uid://b65uej5nhhdgt" path="res://sounds/pickupCoin.wav" id="3_g02r2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hk301"]
+
+[sub_resource type="Gradient" id="Gradient_tqf46"]
+offsets = PackedFloat32Array(0.38011697, 1)
+colors = PackedColorArray(0.41568628, 0.74509805, 0.1882353, 1, 0.41568628, 0.74509805, 0.1882353, 0)
+
+[node name="BulletSpread" type="Area2D" unique_id=709652693]
+script = ExtResource("1_o2yoy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=177531221]
+shape = SubResource("RectangleShape2D_hk301")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1150547824]
+z_index = -1
+texture = ExtResource("2_o2yoy")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=218807659]
+stream = ExtResource("3_g02r2")
+
+[node name="Particles" type="CPUParticles2D" parent="." unique_id=732800588]
+unique_name_in_owner = true
+z_index = -2
+emitting = false
+amount = 200
+lifetime = 10.0
+one_shot = true
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(10, 10)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 50.0
+initial_velocity_max = 100.0
+color_ramp = SubResource("Gradient_tqf46")
+hue_variation_min = 0.36
+hue_variation_max = 0.36

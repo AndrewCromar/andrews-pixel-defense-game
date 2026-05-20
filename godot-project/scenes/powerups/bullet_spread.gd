@@ -22,10 +22,10 @@ func _process(delta: float) -> void:
 	
 	if abs((position - target_position).length()) < 10:
 		queue_free()
-	
+
 func _on_area_entered(area: Area2D) -> void:
 	if area.is_in_group("bullet"):
-		Global.fire_rate /= 2
+		Global.bullet_spread += 1
 		_die()
 
 func _die() -> void:
