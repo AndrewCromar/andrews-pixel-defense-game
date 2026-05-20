@@ -2,7 +2,7 @@ extends Node2D
 
 @export var powerups : Array[PackedScene] = []
 
-const SPAWN_TIME : float = 5.0
+const SPAWN_TIME : float = 20.0
 const MARGIN : float = 50.0 
 
 var counter : float = 0.0
