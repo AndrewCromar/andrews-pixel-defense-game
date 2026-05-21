@@ -2,6 +2,9 @@ extends Node2D
 
 @export_file("*.tscn") var game_over_scene : String
 
+func _ready() -> void:
+	Global.paused = false
+
 func take_damage(amount: int):
 	Global.health -= amount
 
