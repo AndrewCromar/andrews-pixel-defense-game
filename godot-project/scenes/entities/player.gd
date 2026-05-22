@@ -4,6 +4,7 @@ extends Node2D
 
 func _ready() -> void:
 	Global.paused = false
+	Global.health = Global.max_health
 
 func take_damage(amount: int):
 	Global.health -= amount
