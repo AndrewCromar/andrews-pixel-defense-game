@@ -1,6 +1,6 @@
 # TODO
 
-- [ ] Build and put on ONYX website and stuff (maybe steam eventually).
+- [x] Build and put on ONYX website and stuff (maybe steam eventually).
 - [x] Make a better name for the game.
 - [x] Pause menu.
 - [x] Powerups (faster shoot, more bullets per shot, slow down time, hearts).
