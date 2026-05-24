@@ -5,11 +5,15 @@
 
 [node name="CameraContainer" type="Node2D" unique_id=975301458]
 
+[node name="Background" type="Sprite2D" parent="." unique_id=2127228723]
+z_index = -100
+texture = ExtResource("2_un6uh")
+
 [node name="Shake" type="Node2D" parent="." unique_id=166473779]
 script = ExtResource("1_lbd4k")
 
 [node name="Camera2D" type="Camera2D" parent="Shake" unique_id=115238556]
 
-[node name="Background" type="Sprite2D" parent="Shake/Camera2D" unique_id=1455914336]
-z_index = -100
+[node name="BackgroundBackup" type="Sprite2D" parent="Shake/Camera2D" unique_id=1455914336]
+z_index = -101
 texture = ExtResource("2_un6uh")

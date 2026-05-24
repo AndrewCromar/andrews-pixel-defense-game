@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bcig2467um862"]
 
 [ext_resource type="Texture2D" uid="uid://by1pxsvgs8ty5" path="res://assets/sprites/player.png" id="1_6w7gq"]
+[ext_resource type="Script" uid="uid://b6gvwuahxlrw0" path="res://scripts/entities/player.gd" id="1_68xwl"]
 [ext_resource type="Texture2D" uid="uid://bkk41h0sdmnnj" path="res://assets/sprites/playerbase.png" id="2_dd427"]
 [ext_resource type="PackedScene" uid="uid://372c6h0lxl6o" path="res://scenes/game/shield.tscn" id="3_u3rb4"]
 [ext_resource type="PackedScene" uid="uid://cm1y8ys62udfo" path="res://scenes/game/gun.tscn" id="4_nybob"]
@@ -8,6 +9,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dd427"]
 
 [node name="Player" type="Area2D" unique_id=1651844808]
+script = ExtResource("1_68xwl")
 
 [node name="Graphic" type="Sprite2D" parent="." unique_id=72427196]
 z_index = 100

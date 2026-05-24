@@ -15,4 +15,6 @@ func die() -> void:
 	audio_player.stream = die_sounds.pick_random()
 	audio_player.play()
 	
+	Global.CAMERA_SHAKE_DURATION = 0.2
+	
 	queue_free()
