@@ -3,13 +3,21 @@
 [ext_resource type="Script" uid="uid://51aqll8satps" path="res://scripts/weapons/gun.gd" id="1_ncnns"]
 [ext_resource type="Texture2D" uid="uid://k2eq7so3hh7b" path="res://assets/sprites/gun.png" id="2_4xyac"]
 [ext_resource type="PackedScene" uid="uid://dodh3qi4dlqh4" path="res://scenes/game/bullet.tscn" id="2_ogeaa"]
+[ext_resource type="AudioStream" uid="uid://dw2qfpi3wxcnh" path="res://sounds/shoot/laserShoot.wav" id="3_cay5s"]
+[ext_resource type="AudioStream" uid="uid://7cd14y2dl8a0" path="res://sounds/shoot/laserShoot(1).wav" id="4_tj8up"]
+[ext_resource type="AudioStream" uid="uid://cy2k22xr3cv5p" path="res://sounds/shoot/laserShoot(2).wav" id="5_8nd18"]
+[ext_resource type="AudioStream" uid="uid://bnbcxe4uafrqu" path="res://sounds/shoot/laserShoot(3).wav" id="6_cd18l"]
+[ext_resource type="AudioStream" uid="uid://bwutf2jmq3s3w" path="res://sounds/shoot/laserShoot(4).wav" id="7_iy50t"]
 
 [node name="Gun" type="Node2D" unique_id=1635548564]
 script = ExtResource("1_ncnns")
 bullet = ExtResource("2_ogeaa")
+shoot_sounds = Array[AudioStream]([ExtResource("3_cay5s"), ExtResource("4_tj8up"), ExtResource("5_8nd18"), ExtResource("6_cd18l"), ExtResource("7_iy50t")])
 
 [node name="ShootPosition" type="Node2D" parent="." unique_id=2059278950]
 position = Vector2(35, 0)
 
 [node name="Graphic" type="Sprite2D" parent="ShootPosition" unique_id=1601996123]
 texture = ExtResource("2_4xyac")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1952562193]

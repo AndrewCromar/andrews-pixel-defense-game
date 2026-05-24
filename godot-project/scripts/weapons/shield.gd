@@ -9,5 +9,6 @@ func _process(_delta: float) -> void:
 
 func on_block(area: Area2D) -> void:
 	if area.is_in_group("enemy"):
-		area.die()
 		Global.SCORE += 1
+		
+		area.die()

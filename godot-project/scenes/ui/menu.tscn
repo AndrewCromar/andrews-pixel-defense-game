@@ -72,7 +72,7 @@ script = ExtResource("5_cx0sj")
 scene = ExtResource("6_ntye7")
 hover_sound = ExtResource("6_cghgw")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/StartButton" unique_id=993526887]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CenterContainer/VBoxContainer/StartButton" unique_id=1317175980]
 
 [node name="QuitButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=272069305]
 custom_minimum_size = Vector2(200, 25)
@@ -89,4 +89,4 @@ text = "QUIT"
 script = ExtResource("7_cghgw")
 hover_sound = ExtResource("6_cghgw")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/QuitButton" unique_id=540025829]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CenterContainer/VBoxContainer/QuitButton" unique_id=1549297235]

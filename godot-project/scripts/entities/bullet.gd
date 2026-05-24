@@ -11,6 +11,7 @@ func _ready() -> void:
 
 func on_block(area: Area2D) -> void:
 	if area.is_in_group("enemy"):
-		area.die()
 		Global.SCORE += 1
+		
+		area.die()
 		queue_free()
