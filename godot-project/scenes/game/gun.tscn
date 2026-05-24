@@ -2,10 +2,14 @@
 
 [ext_resource type="Script" uid="uid://51aqll8satps" path="res://scripts/weapons/gun.gd" id="1_ncnns"]
 [ext_resource type="Texture2D" uid="uid://k2eq7so3hh7b" path="res://assets/sprites/gun.png" id="2_4xyac"]
+[ext_resource type="PackedScene" uid="uid://dodh3qi4dlqh4" path="res://scenes/game/bullet.tscn" id="2_ogeaa"]
 
 [node name="Gun" type="Node2D" unique_id=1635548564]
 script = ExtResource("1_ncnns")
+bullet = ExtResource("2_ogeaa")
 
-[node name="Graphic" type="Sprite2D" parent="." unique_id=1601996123]
+[node name="ShootPosition" type="Node2D" parent="." unique_id=2059278950]
+position = Vector2(35, 0)
+
+[node name="Graphic" type="Sprite2D" parent="ShootPosition" unique_id=1601996123]
 texture = ExtResource("2_4xyac")
-offset = Vector2(35, 0)

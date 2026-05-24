@@ -6,3 +6,5 @@ var starting_health : int = 3
 var HEALTH : int = starting_health
 
 var CAMERA_SHAKE_DURATION : float
+
+var FIRE_RATE : float = 1
