@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gekkl2ldwl3t"
-path="res://.godot/imported/increase_fire_rate.png-838049103243b06b552f4c8b4001e768.ctex"
+uid="uid://b2u7kp1ch7f6p"
+path="res://.godot/imported/enemy.png-6b2203c402e38acd697818ffb85e8537.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/increase_fire_rate.png"
-dest_files=["res://.godot/imported/increase_fire_rate.png-838049103243b06b552f4c8b4001e768.ctex"]
+source_file="res://assets/sprites/enemy.png"
+dest_files=["res://.godot/imported/enemy.png-6b2203c402e38acd697818ffb85e8537.ctex"]
 
 [params]
 
