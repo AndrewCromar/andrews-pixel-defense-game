@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://c6bdu1nnvyys6"]
+
+[ext_resource type="Texture2D" uid="uid://yrba42okxaiq" path="res://assets/ui/background.png" id="1_b33sd"]
+[ext_resource type="Texture2D" uid="uid://dn644vi6b46ec" path="res://assets/ui/game_over_image.png" id="2_vja5r"]
+[ext_resource type="FontFile" uid="uid://g5p5nkkwfkjv" path="res://fonts/Pix32.ttf" id="3_shdn4"]
+[ext_resource type="Texture2D" uid="uid://dopdfv2whuqy1" path="res://assets/ui/button.png" id="4_8hxim"]
+[ext_resource type="Script" uid="uid://dgj6rbtb2oips" path="res://scripts/ui/label_score.gd" id="4_shdn4"]
+[ext_resource type="Script" uid="uid://163m3t6bpsyw" path="res://scripts/ui/button_load_scene.gd" id="5_shdn4"]
+[ext_resource type="PackedScene" uid="uid://vc5wpu0378ek" path="res://scenes/game.tscn" id="6_8hxim"]
+[ext_resource type="AudioStream" uid="uid://c8xsj8wtvov64" path="res://sounds/ui/button_hover.wav" id="6_sfejy"]
+[ext_resource type="PackedScene" uid="uid://bubfrp72qwc2r" path="res://scenes/ui/menu.tscn" id="8_adkiu"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w6y0u"]
+texture = ExtResource("4_8hxim")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cx0sj"]
+texture = ExtResource("4_8hxim")
+modulate_color = Color(1, 1, 1, 0.49803922)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ntye7"]
+texture = ExtResource("4_8hxim")
+modulate_color = Color(1, 1, 1, 0.7490196)
+
+[node name="End" type="Control" unique_id=1263409375]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=940207030]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_b33sd")
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=714759028]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer" unique_id=1921306715]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer" unique_id=1699808446]
+layout_mode = 2
+texture = ExtResource("2_vja5r")
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=438407504]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.3882353, 0.60784316, 1, 1)
+theme_override_fonts/font = ExtResource("3_shdn4")
+theme_override_font_sizes/font_size = 20
+text = "Score: 999"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_shdn4")
+prefix = "Score: "
+sufix = "."
+
+[node name="Control" type="Control" parent="CenterContainer/VBoxContainer" unique_id=702343642]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="RestartButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=1244457493]
+custom_minimum_size = Vector2(200, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_shdn4")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_w6y0u")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cx0sj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ntye7")
+text = "RESTART"
+script = ExtResource("5_shdn4")
+scene = ExtResource("6_8hxim")
+hover_sound = ExtResource("6_sfejy")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/RestartButton" unique_id=993526887]
+
+[node name="MenuButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=724413718]
+custom_minimum_size = Vector2(200, 25)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_shdn4")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxTexture_w6y0u")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_cx0sj")
+theme_override_styles/hover = SubResource("StyleBoxTexture_ntye7")
+text = "MENU"
+script = ExtResource("5_shdn4")
+scene = ExtResource("8_adkiu")
+hover_sound = ExtResource("6_sfejy")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/MenuButton" unique_id=10528909]
