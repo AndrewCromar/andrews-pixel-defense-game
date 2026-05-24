@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://b6c6p1rxbawce"]
-
-[ext_resource type="Script" uid="uid://b7qthyyp6axeq" path="res://scenes/utils/enemy_spawner.gd" id="1_devoi"]
-[ext_resource type="PackedScene" uid="uid://chuhrns84wer0" path="res://scenes/entities/enemy.tscn" id="2_xl0gr"]
-
-[node name="EnemySpawner" type="Node2D" unique_id=179854735]
-script = ExtResource("1_devoi")
-enemy_scene = ExtResource("2_xl0gr")
