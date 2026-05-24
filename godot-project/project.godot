@@ -12,12 +12,13 @@ config_version=5
 
 config/name="Commander Gus: Fight Against the Bloggers"
 config/description="You are Commander Gus. Bloggers are trying to kill you. Block them. Shoot them. Upgrade your gun. Fend them off as long as you can."
-config/version="v2"
+config/version="v2.5"
+run/main_scene="uid://bubfrp72qwc2r"
 config/features=PackedStringArray("4.6", "Forward Plus")
 boot_splash/bg_color=Color(0.14117648, 0.14117648, 0.14117648, 1)
 boot_splash/use_filter=false
-boot_splash/image="uid://bi7p0x4jldemq"
-config/icon="uid://dmla870r1uhhl"
+boot_splash/image="uid://by1pxsvgs8ty5"
+config/icon="uid://by1pxsvgs8ty5"
 
 [autoload]
 
@@ -25,10 +26,12 @@ Global="*uid://dyr68s1gqjnsx"
 
 [display]
 
+window/size/viewport_width=960
+window/size/viewport_height=540
 window/size/mode=3
 window/stretch/mode="canvas_items"
 window/stretch/aspect="keep_width"
-mouse_cursor/custom_image="uid://dn6d4ybwemrig"
+mouse_cursor/custom_image="uid://263iqq30lqh0"
 mouse_cursor/custom_image_hotspot=Vector2(12.5, 12.5)
 
 [input]
