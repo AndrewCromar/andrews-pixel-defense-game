@@ -4,7 +4,7 @@ class_name Spawner
 @export var distance_outside_screen : float = 30
 @export var entities : Array[PackedScene] = []
 
-const spawn_rate : float = 1
+var spawn_rate : float = 1
 var timer : float
 
 func _process(delta: float) -> void:

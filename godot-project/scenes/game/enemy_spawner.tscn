@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://dmvkark5u61tb"]
-
-[ext_resource type="Script" uid="uid://dp28g0oodrnje" path="res://spawner.gd" id="1_kaeo0"]
-[ext_resource type="PackedScene" uid="uid://chido44odpo73" path="res://scenes/game/enemy.tscn" id="2_nfhys"]
-
-[node name="EnemySpawner" type="Node2D" unique_id=689651868]
-script = ExtResource("1_kaeo0")
-entities = Array[PackedScene]([ExtResource("2_nfhys")])
