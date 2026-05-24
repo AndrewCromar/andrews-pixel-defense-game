@@ -2,8 +2,11 @@
 
 [ext_resource type="Texture2D" uid="uid://by1pxsvgs8ty5" path="res://assets/sprites/player.png" id="1_6w7gq"]
 [ext_resource type="Texture2D" uid="uid://bkk41h0sdmnnj" path="res://assets/sprites/playerbase.png" id="2_dd427"]
+[ext_resource type="PackedScene" uid="uid://372c6h0lxl6o" path="res://scenes/game/shield.tscn" id="3_u3rb4"]
 
-[node name="Player" type="Node2D" unique_id=1767266398]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dd427"]
+
+[node name="Player" type="Area2D" unique_id=1651844808]
 
 [node name="Player" type="Sprite2D" parent="." unique_id=72427196]
 z_index = 100
@@ -13,3 +16,8 @@ texture = ExtResource("1_6w7gq")
 modulate = Color(1, 1, 1, 0.09803922)
 z_index = -99
 texture = ExtResource("2_dd427")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1263350378]
+shape = SubResource("RectangleShape2D_dd427")
+
+[node name="Shield" parent="." unique_id=2006434186 instance=ExtResource("3_u3rb4")]

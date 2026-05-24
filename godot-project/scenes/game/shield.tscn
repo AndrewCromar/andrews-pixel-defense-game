@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://372c6h0lxl6o"]
+
+[ext_resource type="Script" uid="uid://d4mno3eb4um16" path="res://scripts/weapons/shield.gd" id="1_dc0qk"]
+[ext_resource type="Texture2D" uid="uid://ciivfxuf2e5y5" path="res://assets/sprites/shield.png" id="1_t10v3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u3rb4"]
+size = Vector2(5, 100)
+
+[node name="Shield" type="Area2D" unique_id=2006434186]
+script = ExtResource("1_dc0qk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2144519533]
+position = Vector2(70, 0)
+shape = SubResource("RectangleShape2D_u3rb4")
+
+[node name="Graphic" type="Sprite2D" parent="." unique_id=49325858]
+texture = ExtResource("1_t10v3")
+offset = Vector2(68, 0)
