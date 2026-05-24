@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bihsvjfh61d60"]
+
+[ext_resource type="Script" uid="uid://d11xmajcflx7s" path="res://scripts/camera/camera_shake.gd" id="1_lbd4k"]
+[ext_resource type="Texture2D" uid="uid://yrba42okxaiq" path="res://assets/ui/background.png" id="2_un6uh"]
+
+[node name="CameraContainer" type="Node2D" unique_id=975301458]
+
+[node name="Shake" type="Node2D" parent="." unique_id=166473779]
+script = ExtResource("1_lbd4k")
+
+[node name="Camera2D" type="Camera2D" parent="Shake" unique_id=115238556]
+
+[node name="Background" type="Sprite2D" parent="Shake/Camera2D" unique_id=1455914336]
+z_index = -100
+texture = ExtResource("2_un6uh")

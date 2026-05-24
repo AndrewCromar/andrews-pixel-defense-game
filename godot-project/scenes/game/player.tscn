@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bcig2467um862"]
+
+[ext_resource type="Texture2D" uid="uid://by1pxsvgs8ty5" path="res://assets/sprites/player.png" id="1_6w7gq"]
+[ext_resource type="Texture2D" uid="uid://bkk41h0sdmnnj" path="res://assets/sprites/playerbase.png" id="2_dd427"]
+
+[node name="Player" type="Node2D" unique_id=1767266398]
+
+[node name="Player" type="Sprite2D" parent="." unique_id=72427196]
+z_index = 100
+texture = ExtResource("1_6w7gq")
+
+[node name="Base" type="Sprite2D" parent="." unique_id=62969725]
+modulate = Color(1, 1, 1, 0.09803922)
+z_index = -99
+texture = ExtResource("2_dd427")

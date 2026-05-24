@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://vc5wpu0378ek"]
+
+[ext_resource type="PackedScene" uid="uid://bcig2467um862" path="res://scenes/game/player.tscn" id="1_7h61r"]
+[ext_resource type="PackedScene" uid="uid://bihsvjfh61d60" path="res://scenes/game/camera.tscn" id="1_uwrxv"]
+
+[node name="Game" type="Node2D" unique_id=633858300]
+
+[node name="Player" parent="." unique_id=1767266398 instance=ExtResource("1_7h61r")]
+
+[node name="CameraContainer" parent="." unique_id=975301458 instance=ExtResource("1_uwrxv")]

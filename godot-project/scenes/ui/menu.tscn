@@ -6,7 +6,7 @@
 [ext_resource type="FontFile" uid="uid://g5p5nkkwfkjv" path="res://fonts/Pix32.ttf" id="3_w6y0u"]
 [ext_resource type="Script" uid="uid://163m3t6bpsyw" path="res://scripts/ui/button_load_scene.gd" id="5_cx0sj"]
 [ext_resource type="AudioStream" uid="uid://c8xsj8wtvov64" path="res://sounds/ui/button_hover.wav" id="6_cghgw"]
-[ext_resource type="PackedScene" uid="uid://vc5wpu0378ek" path="res://scenes/game.tscn" id="6_ntye7"]
+[ext_resource type="PackedScene" uid="uid://vc5wpu0378ek" path="res://scenes/game/game.tscn" id="6_ntye7"]
 [ext_resource type="Script" uid="uid://lholi5qqenw1" path="res://scripts/ui/button_quit.gd" id="7_cghgw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_w6y0u"]
