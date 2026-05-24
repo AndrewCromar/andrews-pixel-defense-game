@@ -2,9 +2,12 @@
 
 [ext_resource type="PackedScene" uid="uid://bcig2467um862" path="res://scenes/game/player.tscn" id="1_7h61r"]
 [ext_resource type="PackedScene" uid="uid://bihsvjfh61d60" path="res://scenes/game/camera.tscn" id="1_uwrxv"]
+[ext_resource type="PackedScene" uid="uid://dmvkark5u61tb" path="res://scenes/game/enemy_spawner.tscn" id="3_0sr1o"]
 
 [node name="Game" type="Node2D" unique_id=633858300]
 
 [node name="Player" parent="." unique_id=1767266398 instance=ExtResource("1_7h61r")]
 
 [node name="CameraContainer" parent="." unique_id=975301458 instance=ExtResource("1_uwrxv")]
+
+[node name="EnemySpawner" parent="." unique_id=689651868 instance=ExtResource("3_0sr1o")]
