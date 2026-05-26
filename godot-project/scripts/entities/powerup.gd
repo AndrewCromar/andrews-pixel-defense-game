@@ -7,16 +7,14 @@ extends MovingEntity
 
 @onready var hitbox : Area2D = $Area2D
 
-var side : int
-
 func _ready() -> void:
 	hitbox.area_entered.connect(on_collect)
-	
-	match side:
-		0, 1:
-			end_position = Vector2(-position.y, position.x)
-		2, 3:
-			end_position = Vector2(position.y, -position.x)
+
+	var half : Vector2 = get_viewport().get_visible_rect().size / 2
+	if abs(position.y) - half.y > abs(position.x) - half.x:
+		end_position = Vector2(position.x, -position.y)
+	else:
+		end_position = Vector2(-position.x, position.y)
 
 func on_collect(area : Area2D) -> void:
 	if area.is_in_group("bullet"):

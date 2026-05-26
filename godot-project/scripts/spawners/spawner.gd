@@ -4,7 +4,7 @@ class_name Spawner
 @export var distance_outside_screen : float = 30
 @export var entities : Array[PackedScene] = []
 
-var spawn_rate : float = 1
+@export var spawn_rate : float = 1
 var timer : float = 0
 
 var side : int = 0

@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://bihsvjfh61d60" path="res://scenes/game/camera.tscn" id="1_uwrxv"]
 [ext_resource type="Script" uid="uid://cku15rllf0hv" path="res://scripts/spawners/function_spawner.gd" id="3_0sr1o"]
 [ext_resource type="PackedScene" uid="uid://chido44odpo73" path="res://scenes/game/enemy.tscn" id="4_kelw5"]
+[ext_resource type="Script" uid="uid://dp28g0oodrnje" path="res://scripts/spawners/spawner.gd" id="5_spwnr"]
+[ext_resource type="PackedScene" uid="uid://sefymul6gyje" path="res://scenes/powerups/fire_rate_powerup.tscn" id="6_pwrup"]
 
 [node name="Game" type="Node2D" unique_id=633858300]
 
@@ -14,6 +16,11 @@
 [node name="EnemySpawner" type="Node2D" parent="." unique_id=545243699]
 script = ExtResource("3_0sr1o")
 entities = Array[PackedScene]([ExtResource("4_kelw5")])
+
+[node name="PowerupSpawner" type="Node2D" parent="." unique_id=162026599]
+script = ExtResource("5_spwnr")
+entities = Array[PackedScene]([ExtResource("6_pwrup")])
+spawn_rate = 20.0
 
 [node name="Enemy" parent="." unique_id=1523481439 instance=ExtResource("4_kelw5")]
 position = Vector2(-207, -35)
