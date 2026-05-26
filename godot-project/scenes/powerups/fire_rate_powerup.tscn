@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://sefymul6gyje"]
+
+[ext_resource type="Script" uid="uid://bvobbnpi1oqi7" path="res://scripts/entities/powerup.gd" id="1_82gvn"]
+[ext_resource type="Texture2D" uid="uid://dgd0gk8tf5g4s" path="res://assets/sprites/increase_fire_rate.png" id="1_y28c8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wkhjp"]
+
+[sub_resource type="Gradient" id="Gradient_82gvn"]
+offsets = PackedFloat32Array(0, 0.029239766, 0.40350878, 1)
+colors = PackedColorArray(0.41568628, 0.74509805, 0.1882353, 0, 0.41568628, 0.74509805, 0.1882353, 1, 0.41568628, 0.74509805, 0.1882353, 1, 0.41568628, 0.74509805, 0.1882353, 0)
+
+[node name="FireRatePowerup" type="Node2D" unique_id=468250565]
+script = ExtResource("1_82gvn")
+
+[node name="Graphic" type="Sprite2D" parent="." unique_id=81495406]
+texture = ExtResource("1_y28c8")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=890761516]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=542060442]
+shape = SubResource("RectangleShape2D_wkhjp")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=69675193]
+emitting = false
+amount = 100
+lifetime = 10.0
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(10, 10)
+direction = Vector2(0, 0)
+spread = 180.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 30.0
+initial_velocity_max = 70.0
+color_ramp = SubResource("Gradient_82gvn")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=492375176]

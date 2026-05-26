@@ -11,7 +11,7 @@ script = ExtResource("1_1bog7")
 [node name="Graphic" type="Sprite2D" parent="." unique_id=1920210276]
 texture = ExtResource("1_xhiv3")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=275038784]
+[node name="Area2D" type="Area2D" parent="." unique_id=275038784 groups=["bullet"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=673505220]
 shape = SubResource("RectangleShape2D_1bog7")

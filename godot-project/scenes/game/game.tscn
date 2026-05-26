@@ -14,3 +14,12 @@
 [node name="EnemySpawner" type="Node2D" parent="." unique_id=545243699]
 script = ExtResource("3_0sr1o")
 entities = Array[PackedScene]([ExtResource("4_kelw5")])
+
+[node name="Enemy" parent="." unique_id=1523481439 instance=ExtResource("4_kelw5")]
+position = Vector2(-207, -35)
+
+[node name="Enemy2" parent="." unique_id=1658830617 instance=ExtResource("4_kelw5")]
+position = Vector2(-88, 34)
+
+[node name="Enemy3" parent="." unique_id=569420313 instance=ExtResource("4_kelw5")]
+position = Vector2(-139, 97)
