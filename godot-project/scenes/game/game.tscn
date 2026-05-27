@@ -20,7 +20,7 @@ entities = Array[PackedScene]([ExtResource("4_kelw5")])
 [node name="PowerupSpawner" type="Node2D" parent="." unique_id=162026599]
 script = ExtResource("5_spwnr")
 entities = Array[PackedScene]([ExtResource("6_pwrup")])
-spawn_rate = 20.0
+spawn_rate = 30.0
 
 [node name="Enemy" parent="." unique_id=1523481439 instance=ExtResource("4_kelw5")]
 position = Vector2(-207, -35)

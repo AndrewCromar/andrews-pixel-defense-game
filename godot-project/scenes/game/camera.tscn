@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://d11xmajcflx7s" path="res://scripts/camera/camera_shake.gd" id="1_lbd4k"]
 [ext_resource type="Texture2D" uid="uid://yrba42okxaiq" path="res://assets/ui/background.png" id="2_un6uh"]
+[ext_resource type="Texture2D" uid="uid://b6aefq1gror0h" path="res://assets/ui/health.png" id="3_un6uh"]
+[ext_resource type="Script" uid="uid://62wkt5yoo87j" path="res://scripts/ui/health_overlay.gd" id="4_d5jwf"]
+[ext_resource type="PackedScene" uid="uid://c6bdu1nnvyys6" path="res://scenes/ui/end.tscn" id="5_br04y"]
 
 [node name="CameraContainer" type="Node2D" unique_id=975301458]
 
@@ -13,6 +16,12 @@ texture = ExtResource("2_un6uh")
 script = ExtResource("1_lbd4k")
 
 [node name="Camera2D" type="Camera2D" parent="Shake" unique_id=115238556]
+
+[node name="HealthOverlay" type="Sprite2D" parent="Shake/Camera2D" unique_id=1430908531]
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("3_un6uh")
+script = ExtResource("4_d5jwf")
+scene = ExtResource("5_br04y")
 
 [node name="BackgroundBackup" type="Sprite2D" parent="Shake/Camera2D" unique_id=1455914336]
 z_index = -101

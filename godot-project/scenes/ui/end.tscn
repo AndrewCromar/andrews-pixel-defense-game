@@ -86,7 +86,7 @@ script = ExtResource("5_shdn4")
 scene = ExtResource("6_8hxim")
 hover_sound = ExtResource("6_sfejy")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/RestartButton" unique_id=993526887]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CenterContainer/VBoxContainer/RestartButton" unique_id=1178759478]
 
 [node name="MenuButton" type="Button" parent="CenterContainer/VBoxContainer" unique_id=724413718]
 custom_minimum_size = Vector2(200, 25)
@@ -104,4 +104,4 @@ script = ExtResource("5_shdn4")
 scene = ExtResource("8_adkiu")
 hover_sound = ExtResource("6_sfejy")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CenterContainer/VBoxContainer/MenuButton" unique_id=10528909]
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="CenterContainer/VBoxContainer/MenuButton" unique_id=1849341573]

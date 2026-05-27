@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://bvobbnpi1oqi7" path="res://scripts/entities/powerup.gd" id="1_82gvn"]
 [ext_resource type="Texture2D" uid="uid://dgd0gk8tf5g4s" path="res://assets/sprites/increase_fire_rate.png" id="1_y28c8"]
+[ext_resource type="AudioStream" uid="uid://cqveydbai0gk8" path="res://sounds/explode/explosion.wav" id="2_4dvaa"]
+[ext_resource type="AudioStream" uid="uid://dppxb22yw5rl4" path="res://sounds/explode/explosion(1).wav" id="3_aat5q"]
+[ext_resource type="AudioStream" uid="uid://b1mxkicogqi1y" path="res://sounds/explode/explosion(2).wav" id="4_ptine"]
+[ext_resource type="AudioStream" uid="uid://c47uro3rkex75" path="res://sounds/explode/explosion(3).wav" id="5_r7aj4"]
+[ext_resource type="AudioStream" uid="uid://cyptio43vv06b" path="res://sounds/explode/explosion(4).wav" id="6_h26dn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wkhjp"]
 
@@ -11,6 +16,7 @@ colors = PackedColorArray(0.41568628, 0.74509805, 0.1882353, 0, 0.41568628, 0.74
 
 [node name="FireRatePowerup" type="Node2D" unique_id=468250565]
 script = ExtResource("1_82gvn")
+die_sounds = Array[AudioStream]([ExtResource("2_4dvaa"), ExtResource("3_aat5q"), ExtResource("4_ptine"), ExtResource("5_r7aj4"), ExtResource("6_h26dn")])
 
 [node name="Graphic" type="Sprite2D" parent="." unique_id=81495406]
 texture = ExtResource("1_y28c8")
